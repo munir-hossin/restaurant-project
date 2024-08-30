@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+/* common css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Overlock", sans-serif;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* heder section */
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding-top: 30px;
+    .container {
+        height: 100px;
+    }
+    .trace {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .circle {
+        font-size: 10px;
+        line-height: 10px;
+        border-radius: 50%;
+        font-weight: 700;
+        padding: 4px;
+        color: #fff;
+        background-color: red;
+        bottom: 15px;
+        left: 12px;
+    }
+
+    .trace-1 {
+        width: 37px;
+        border: 2px solid #020000;
+        margin-left: auto;
+    }
+
+    .trace-2 {
+        width: 48px;
+        border: 2px solid #020000;
+        margin-left: auto;
+        margin: 5px 0;
+    }
+
+    .trace-3 {
+        width: 24px;
+        border: 2px solid #020000;
+        margin-left: auto;
+    }
+
+    ul li {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+}
+
+
+
+
+/* Banner section Start */
+.banner {
+    background-image: url(../images/b-bg.png);
+    height: 666px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        padding-top: 200px;
+        font-size: 145px;
+        font-weight: 400;
+        line-height: 140px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .Restaurant {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: 175px;
+    }
+
+    @media (max-width: 575.98px) {
+        Restaurant strong {
+            display: none;
+        }
+        .s-trace {
+            display: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    @media only screen and (max-width: 399px) {
+        .Restaurant strong {
+            width: 100%;
+            display: none;
+        }
+    }
+
+    strong {
+        font-family: "Overlock", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 28px;
+        padding: 17px 50px;
+        color: #fff;
+        background: #e7272d;
+        text-align: center;
+    }
+
+    span {
+        margin-right: 27px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .s-trace {
+        display: inline-block;
+        width: 300px;
+        border-top: 2px solid #e7272d;
+    }
+}
+
+/* Best food ideas.. section */
+
+.best-food {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.best-food-item {
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 64px;
+    }
+
+    .codulgence {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    button {
+        width: 195px;
+        height: 55px;
+        background: #e7272d;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    strong {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .Breakfast {
+        background: #1b1b1b;
+       
+    
+    }
+
+    .water-mark-img {
+        left: -40px;
+        bottom: -40px;
+    }
+}
+
+
+
+
+.extra-border {
+    position: absolute;
+    width: 92%;
+    height: 90%;
+    border: 1px solid#CCC;
+    right: -10px;
+    bottom: 13%;
+     z-index: 0;
+  
+      
+  }
+  
+
+
+
+.Breakfast {
+    position: absolute;
+    background: #1b1b1b;
+    z-index: 1;
+    left: 10px;
+    bottom: 30px;
+
+}
+
+/* specials Menu section */
+
+.s-menu {
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 64px;
+        color: #1b1b1b;
+    }
+    .list {
+        ul {
+            width: 85%;
+            height: 70px;
+            padding: 10px 0;
+            margin: 0 auto;
+            li:hover {
+                color: #fff;
+                background-color: #e7272d;
+                padding: 10px 30px;
+                border-radius: 5px;
+                transition: 1s;
+            }
+        }
+    }
+
+    .sub-menu {
+        li {
+            padding: 15px 30px;
+            border-radius: 5px;
+            margin: 5px 7px;
+        }
+
+        li:hover {
+            background-color: #e7272d;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            transition: 3s;
+        }
+    }
+}
+
+.s-manu-item {
+    border: 1px solid #cccccc;
+    img {
+        width: 350px;
+        height: 300px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .circle-2 {
+        width: 10px;
+        height: 10px;
+        background-color: #e7272d;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+
+    i {
+        color: #e7272d;
+        padding: 0 10px;
+    }
+
+    h5 {
+        font-size: 22px;
+        font-weight: 800;
+        color: #1b1b1b;
+        margin-right: 100px;
+    }
+
+    li {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+}
+
+.cart {
+    width: 263px;
+    bottom: 0px;
+    left: 0;
+    padding-left: 27px;
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+
+.add {
+    width: 95%;
+    height: 55px;
+    border-radius: 25px;
+    color: #e7272d;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    border: 2px solid #e7272d;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.add:hover {
+    i {
+        color: #fff;
+        transition: 1s;
+    }
+}
+
+.add:hover {
+    background: #e7272d;
+    color: #fff;
+    transition: all 2s;
+}
+
+/* booking section start */
+
+.booking-aria {
+    background-image: url(../images/favorite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.favorite-table {
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 64px;
+        height: 128px;
+        color: #fff;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 28px;
+        margin: 15px 0px 30px 0px;
+    }
+
+    strong {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        color: #fff;
+    }
+
+    span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #fff;
+    }
+}
+
+.form-aria {
+    form {
+        border-radius: 10px;
+        background: #ffffff;
+      
+    }
+
+    select {
+        width: 92%;
+        height: 53px;
+        border-radius: 5px;
+        border: 1px solid #e7e7e7;
+        margin: 0px 30px 20px;
+    }
+
+    input {
+        width: 92%;
+        height: 53px;
+        border-radius: 5px;
+        border: 1px solid #e7e7e7;
+        margin: 0px 30px 20px;
+    }
+
+    li {
+        padding-bottom: 20px;
+    }
+
+    button {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        border-radius: 5px;
+        color: #fff;
+        background: #e7272d;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .form-aria button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+/* Our Food Gallery Start */
+
+.food-gallery {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.food-g-aria {
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 64px;
+        padding-bottom: 50px;
+    }
+
+    .food-img {
+        margin-bottom: 30px;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .s-mark1 {
+        position: absolute;
+        height: 374px;
+        left: 35px;
+        bottom: 20px;
+        border: 1px solid #e7272d;
+    }
+
+    .s-mark2 {
+        position: absolute;
+        width: 247px;
+        left: 20px;
+        bottom: 30px;
+        border: 1px solid #e7272d;
+    }
+
+    .s-mark3 {
+        position: absolute;
+        color: #fff;
+        left: 50px;
+        bottom: 60px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    .s-mark4 {
+        position: absolute;
+        color: #fff;
+        left: 50px;
+        bottom: 50px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+/* Our Food Gallery End */
+
+/* Contact Settion Start */
+
+.contact {
+    background: #1b1b1b;
+    color: #fff;
+    padding-top: 70px;
+
+    .contact-logo {
+        margin-bottom: 60px;
+    }
+
+    h6 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .restan {
+        width: 375px;
+        height: 1px;
+        border: 1px solid #ffffff4d;
+    }
+
+    .about {
+        h6 {
+            margin-left: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-left: 30px;
+        }
+
+        ul li {
+            width: 35px;
+            height: 35px;
+            background: #3f3f3f;
+            padding-left: 0px;
+        }
+    }
+
+    /*** explore* */
+
+    .explore {
+        li {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 40px;
+        }
+    }
+
+    .contact-info {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+
+        i {
+            width: 35px;
+            height: 35px;
+            color: #fff;
+            background: #e7272d;
+        }
+    }
+
+    .subscribe {
+        p {
+            height: 56px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        button {
+            width: 117px;
+            height: 40px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            background: #e7272d;
+        }
+
+        input {
+            /* width: 361px; */
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid #ffffff33;
+            background: #1b1b1b;
+            font-size: 18px;
+            font-weight: 400px;
+            color: #fff;
+        }
+    }
+
+    .footer-img {
+        bottom: 0px;
+        left: -120px;
+    }
+}
+
+/**** Responsive ****/
+
+@media (max-width: 991.98px) {
+    .subscribe button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hlllo {
+        margin-left: 200px;
+        padding-left: 200px;
+        background-color: #ffff;
+        color: black;
+    }
+}
+
+/* Contact Settion End */
+
+/* Footer section Start */
+.footer {
+    height: 65px;
+    background: #262525;
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #fff;
+    }
+}
+
+/* Footer End */
+
+
+
+
+
+/**************** Main menu Responsive here *******************/
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+    .main-menu {
+        display: none;
+    }    
+    
+    .trace-aria:hover {
+       .trace-1 {
+        width: 48px;
+        border: 2px solid #b11313;
+        transition: 2s;
+       }
+    
+       .trace-2 {
+        border: 2px solid #b11313;
+       }
+       .trace-3 {
+        width: 48px;
+        border: 2px solid #b11313;
+        transition: 2s;
+       }
+    
+    }
+    
+     }
+    
+    
