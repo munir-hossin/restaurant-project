@@ -122,6 +122,8 @@ a {
        
     }
 
+    
+
 
     strong {
         font-family: "Overlock", sans-serif;
@@ -149,6 +151,9 @@ a {
         border-top: 2px solid #e7272d;
     }
 }
+
+
+
 
 /* Best food ideas.. section */
 
@@ -198,18 +203,17 @@ a {
     }
 }
 
-
+/* 
 .extra-border {
     position: absolute;
     width: 92%;
     height: 90%;
     border: 1px solid#CCC;
-    right: -3%;
+    right: -3%; 
     bottom: 13%;
      z-index: 0;
-  
-      
-  }
+    <div class="extra-border mt-5"></div>
+  } */
   
   
 
@@ -605,7 +609,8 @@ a {
     }
 
     .restan {
-        width: 375px;
+        /* width: 375px; */
+        width: 34%;
         height: 1px;
         border: 1px solid #ffffff4d;
     }
