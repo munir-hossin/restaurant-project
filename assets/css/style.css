@@ -71,6 +71,12 @@ a {
         font-weight: 700;
         line-height: 24px;
     }
+
+    
+    .main-menu ul li a:hover {
+        color: #cf0000;
+        border-radius: 5px solid red;
+    }
 }
 
 
@@ -99,22 +105,23 @@ a {
     }
 
     @media (max-width: 575.98px) {
-        Restaurant strong {
+        .Restaurant strong {
             display: none;
         }
+
+        .m-head {
+            font-size: 100px;
+            font-weight: 800;
+            
+        }
+
         .s-trace {
             display: none;
-            margin: 0;
-            padding: 0;
         }
+
+       
     }
 
-    @media only screen and (max-width: 399px) {
-        .Restaurant strong {
-            width: 100%;
-            display: none;
-        }
-    }
 
     strong {
         font-family: "Overlock", sans-serif;
@@ -138,7 +145,7 @@ a {
 
     .s-trace {
         display: inline-block;
-        width: 300px;
+        width: 27%;
         border-top: 2px solid #e7272d;
     }
 }
@@ -192,22 +199,19 @@ a {
 }
 
 
-
-
 .extra-border {
     position: absolute;
     width: 92%;
     height: 90%;
     border: 1px solid#CCC;
-    right: -10px;
+    right: -3%;
     bottom: 13%;
      z-index: 0;
   
       
   }
   
-
-
+  
 
 .Breakfast {
     position: absolute;
@@ -221,50 +225,55 @@ a {
 /* specials Menu section */
 
 .s-menu {
+
     h2 {
-        font-size: 48px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #1B1B1B;
+   
+    }
+
+    ul li a {
+        font-size: 18px;
         font-weight: 700;
-        line-height: 64px;
-        color: #1b1b1b;
-    }
-    .list {
-        ul {
-            width: 85%;
-            height: 70px;
-            padding: 10px 0;
-            margin: 0 auto;
-            li:hover {
-                color: #fff;
-                background-color: #e7272d;
-                padding: 10px 30px;
-                border-radius: 5px;
-                transition: 1s;
-            }
-        }
-    }
+        line-height: 21px;
 
-    .sub-menu {
-        li {
-            padding: 15px 30px;
-            border-radius: 5px;
-            margin: 5px 7px;
-        }
-
-        li:hover {
-            background-color: #e7272d;
-            color: #fff;
-            padding: 15px 30px;
-            border-radius: 5px;
-            transition: 3s;
-        }
     }
+  
+  
+    .brand li a {
+        list-style: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: black;
+    }
+    
+    .brand li:hover {
+        background-color: #E7272D;
+       a {
+        color: #fff;
+       }
+    }    
+
 }
+
+@media only screen and (max-width: 575px) {
+   
+    .brand li {
+        border: 1px solid black;
+        margin: 0;
+    }
+
+}
+
+
+
 
 .s-manu-item {
     border: 1px solid #cccccc;
     img {
-        width: 350px;
-        height: 300px;
+    
         border-radius: 15px 15px 0px 0px;
     }
 
@@ -388,7 +397,7 @@ a {
     }
 
     select {
-        width: 92%;
+        width: 89%;
         height: 53px;
         border-radius: 5px;
         border: 1px solid #e7e7e7;
@@ -396,7 +405,7 @@ a {
     }
 
     input {
-        width: 92%;
+        width: 89%;
         height: 53px;
         border-radius: 5px;
         border: 1px solid #e7e7e7;
@@ -418,6 +427,20 @@ a {
     }
 }
 
+
+@media only screen and (max-width: 575px) {
+          .form-aria form {
+            select {
+               width: 85%;
+            }
+
+            input {
+               width: 85%;
+            }
+          }
+        
+}
+
 @media (max-width: 991.98px) {
     .form-aria button {
         display: block;
@@ -427,6 +450,79 @@ a {
 
 
 /* Our Food Gallery Start */
+
+
+.f-img-aria {
+    position: relative;
+ 
+&::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    left: 0;
+    right: 0;
+    
+  }
+
+  &:hover::before {
+    background-color: #39353664;
+  } 
+
+}
+
+    
+.food-img-aria {
+    position: relative;
+    
+    &::before {
+        content: '';
+        width: 100%;
+        height: 90%;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        transform:scale(0.1);
+        transition: all ease 1s;
+       position: absolute;
+    }
+
+    &:hover::before {
+        background-color: rgba(0, 0, 0, 0.352);
+        border-radius: 0%;
+       transform:scale(1);
+      
+    }
+   
+}
+
+    
+.hello {
+    position: relative;
+    
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        transform:scale(0.1);
+        transition: all ease 1s;
+       position: absolute;
+    }
+
+    &:hover::before {
+        background-color: rgba(0, 0, 0, 0.352);
+        border-radius: 0%;
+       transform:scale(1);
+      
+    }
+   
+}
+
+ 
+
 
 .food-gallery {
     padding-top: 80px;
@@ -456,6 +552,8 @@ a {
         bottom: 20px;
         border: 1px solid #e7272d;
     }
+
+   
 
     .s-mark2 {
         position: absolute;
@@ -640,25 +738,26 @@ a {
     .main-menu {
         display: none;
     }    
+
     
-    .trace-aria:hover {
-       .trace-1 {
-        width: 48px;
-        border: 2px solid #b11313;
-        transition: 2s;
-       }
-    
-       .trace-2 {
-        border: 2px solid #b11313;
-       }
-       .trace-3 {
-        width: 48px;
-        border: 2px solid #b11313;
-        transition: 2s;
-       }
-    
-    }
-    
+     }
+
+     .trace-aria:hover {
+        .trace-1 {
+         width: 48px;
+         border: 2px solid #b11313;
+         transition: 2s;
+        }
+     
+        .trace-2 {
+         border: 2px solid #b11313;
+        }
+        .trace-3 {
+         width: 48px;
+         border: 2px solid #b11313;
+         transition: 2s;
+        }
+     
      }
     
     

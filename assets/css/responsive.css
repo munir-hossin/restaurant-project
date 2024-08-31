@@ -1,0 +1,23 @@
+
+
+
+/* Apply styles starting from medium devices and up to extra large devices */
+/* @media (min-width: 768px) and (max-width: 1199.98px) {} */
+@media (min-width: 368px) and (max-width: 575.98px) {
+
+    .Restaurant {
+       margin-left: auto;
+
+    }
+
+    .s-trace {
+        display: none;
+    }
+
+    .m-head {
+  font-size: 22px;
+      font-weight:400;
+      color: yellow;
+    }
+}
+
